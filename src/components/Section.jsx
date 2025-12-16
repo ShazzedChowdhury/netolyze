@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Section = ({children, style}) => {
-    return (
-       <section className={`container mx-auto p-5 ${style && style}`}>
-        {children}
-       </section>
-    );
+const Section = ({ children, style, customWidth="container" }) => {
+  return (
+    <section
+      className={`${customWidth} mx-auto px-5 md:px-10 ${
+        style && style
+      }`}
+    >
+      {children}
+    </section>
+  );
 };
 
 export default Section;
