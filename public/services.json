@@ -1,0 +1,231 @@
+[
+  {
+    "serviceTitle": "SEO (On-Page, Off-Page & Technical SEO)",
+    "platforms": "",
+    "goal": "Drive consistent, high-intent organic traffic that converts into leads & sales.",
+    "serviceFeatures": [
+      "Keyword research mapped to buyer intent",
+      "On-page optimization (titles, H1-H3s, content structure, internal linking)",
+      "Technical SEO audits (site speed, indexing, Core Web Vitals, crawl errors)",
+      "Schema markup & search enhancements",
+      "High-authority backlink outreach & digital PR",
+      "Monthly tracking, analytics & ranking reports"
+    ],
+    "icon": "FaSearch"
+  },
+  {
+    "serviceTitle": "Local SEO (Bangladesh & International)",
+    "platforms": "",
+    "goal": "Dominate Google Map Pack & local searches to drive inquiries.",
+    "serviceFeatures": [
+      "Google Business Profile optimization",
+      "Local keyword targeting",
+      "NAP consistency + citation building",
+      "Local backlink placement",
+      "Review generation strategy",
+      "Map ranking tracking"
+    ],
+    "icon": "FaMapMarkedAlt"
+  },
+  {
+    "serviceTitle": "SEO Content Writing",
+    "platforms": "",
+    "goal": "Rank + persuade + convert.",
+    "serviceFeatures": [
+      "Blog articles",
+      "Service pages",
+      "Product descriptions",
+      "Landing page copy",
+      "Long-form authority guides",
+      "On-page keyword optimization + semantic SEO"
+    ],
+    "icon": "FaPenNib"
+  },
+  {
+    "serviceTitle": "YouTube SEO",
+    "platforms": "YouTube",
+    "goal": "Turn YouTube into a traffic & lead funnel.",
+    "serviceFeatures": [
+      "Keyword targeting for video topics",
+      "SEO-optimized title, description & tag setup",
+      "Thumbnail CTR optimization",
+      "Watch-time and retention strategy",
+      "Playlist & channel structuring",
+      "Video repurposing for Shorts/Reels"
+    ],
+    "icon": "FaYoutube"
+  },
+  {
+    "serviceTitle": "Email Marketing",
+    "platforms": "",
+    "goal": "Convert leads into loyal customers through automation.",
+    "serviceFeatures": [
+      "Lead magnet creation",
+      "Email funnel setup",
+      "Welcome sequences",
+      "Sales campaigns",
+      "Broadcast emails",
+      "List segmentation & personalization",
+      "Deliverability optimization"
+    ],
+    "icon": "MdEmail"
+  },
+  {
+    "serviceTitle": "Social Media Marketing & Management",
+    "platforms": "Facebook, Instagram, TikTok",
+    "goal": "Build brand authority + drive daily inbound leads.",
+    "serviceFeatures": [
+      "Monthly content calendars",
+      "Platform-specific strategy",
+      "Reels/short-form content scripting",
+      "Daily posting & moderation",
+      "Engagement optimization",
+      "Community growth strategy",
+      "Performance analytics & reporting"
+    ],
+    "icon": "FaShareAlt"
+  },
+  {
+    "serviceTitle": "Paid Ads & Shopify SEO",
+    "platforms": "Google Ads, YouTube Ads",
+    "goal": "Produce measurable ROI through targeted ad campaigns.",
+    "serviceFeatures": [
+      "Campaign research & planning",
+      "Funnel-based ad structure",
+      "High-converting ad copy",
+      "Creative development guidelines",
+      "A/B testing",
+      "Retargeting",
+      "ROI tracking & scaling",
+      "Shopify SEO includes:",
+      "Product-page SEO",
+      "Category optimization",
+      "Store speed optimizations",
+      "Conversion-focused content"
+    ],
+    "icon": "FaBullhorn"
+  },
+  {
+    "serviceTitle": "Business Consultancy",
+    "platforms": "",
+    "goal": "Fix structural bottlenecks preventing growth.",
+    "serviceFeatures": [
+      "Business model audits",
+      "Pricing framework optimization",
+      "Funnel reviews",
+      "Customer journey mapping",
+      "Offer repositioning",
+      "Growth roadmap development"
+    ],
+    "icon": "FaBriefcase"
+  },
+  {
+    "serviceTitle": "Brand Planning & Strategy",
+    "platforms": "",
+    "goal": "Build brands that stand out and dominate markets.",
+    "serviceFeatures": [
+      "Market research & competitor analysis",
+      "Audience persona development",
+      "Brand positioning strategy",
+      "Value proposition refinement",
+      "Tone of voice development",
+      "Brand identity systems",
+      "Visual brand guidelines",
+      "Campaign messaging frameworks"
+    ],
+    "icon": "FaLightbulb"
+  },
+  {
+    "serviceTitle": "Marketing Strategy & Funnel Creation",
+    "platforms": "",
+    "goal": "Move traffic to conversions with precise customer journeys.",
+    "serviceFeatures": [
+      "TOFU–MOFU–BOFU funnel mapping",
+      "Lead magnets & offer sequencing",
+      "Ad & content funnel linking",
+      "Landing page flow",
+      "Automated CRM + email funnels"
+    ],
+    "icon": "FaProjectDiagram"
+  },
+  {
+    "serviceTitle": "News & PR Support (Bangladesh)",
+    "platforms": "",
+    "goal": "Build authority through media coverage & brand visibility.",
+    "serviceFeatures": [
+      "Press release writing",
+      "Local and national news placements",
+      "Online publication features",
+      "Brand story pitching",
+      "Corporate announcement distribution"
+    ],
+    "icon": "FaNewspaper"
+  },
+  {
+    "serviceTitle": "Creative Production",
+    "platforms": "Graphic Design | Video Editing | UI/UX",
+    "goal": "Deliver visually powerful marketing assets.",
+    "serviceFeatures": [
+      "Brand identity design",
+      "Social post designs",
+      "Motion graphics & video ads",
+      "Reels/Shorts editing",
+      "Website UI/UX wireframes",
+      "Landing page visual design"
+    ],
+    "icon": "FaPaintBrush"
+  },
+  {
+    "serviceTitle": "Digital Media Buying",
+    "platforms": "Meta, Google, YouTube, TikTok",
+    "goal": "Maximize placement & ROI across paid media channels.",
+    "serviceFeatures": [
+      "Media planning & budget allocation",
+      "Platform buying (Meta, Google, YouTube, TikTok)",
+      "CPM/CPC optimization",
+      "Scaling profitable ads",
+      "Analytics dashboards"
+    ],
+    "icon": "FaChartLine"
+  },
+  {
+    "serviceTitle": "Content Marketing Strategy & Scripting",
+    "platforms": "",
+    "goal": "Create consistent, authority-building content that converts.",
+    "serviceFeatures": [
+      "Viral content frameworks",
+      "Authority video scripts",
+      "Educational brand storytelling",
+      "Reel/Short hooks",
+      "Influencer content scripting"
+    ],
+    "icon": "FaPenFancy"
+  },
+  {
+    "serviceTitle": "Outdoor Marketing (Bangladesh)",
+    "platforms": "",
+    "goal": "Blend offline authority with online performance.",
+    "serviceFeatures": [
+      "Billboard & signage placement strategy",
+      "Transit advertising planning",
+      "Location-based targeting",
+      "Design coordination",
+      "Campaign analytics integration"
+    ],
+    "icon": "FaMapSigns"
+  },
+  {
+    "serviceTitle": "Influencer Marketing (Bangladesh)",
+    "platforms": "",
+    "goal": "Leverage creator trust to drive sales fast.",
+    "serviceFeatures": [
+      "Influencer research & vetting",
+      "Contract negotiation",
+      "Campaign planning",
+      "Script briefing",
+      "Performance tracking",
+      "Affiliate & referral setup"
+    ],
+    "icon": "FaUserFriends"
+  }
+]

@@ -28,7 +28,7 @@ const PartnersLogo = () => {
                   src={partner?.img}
                   alt={partner?.name}
                 />
-                <h5 className="text-white font-semibold">Marketing Partners</h5>
+                <h5 className="text-white font-semibold">{partner?.name}</h5>
               </div>
             );
           })}
