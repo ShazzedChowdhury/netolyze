@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Section = ({ children, style, customWidth="container", customPadding="mx-auto px-5" }) => {
+const Section = ({
+  children,
+  style,
+  customWidth = "container",
+  customPaddingX = "mx-auto px-5 md:px-10",
+}) => {
   return (
-    <section
-      className={`${customWidth} ${customPadding} md:px-10 ${
-        style && style
-      }`}
-    >
+    <section className={`${customWidth} ${customPaddingX} ${style && style}`}>
       {children}
     </section>
   );
