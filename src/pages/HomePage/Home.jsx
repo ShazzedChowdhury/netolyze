@@ -6,6 +6,7 @@ import ServicesSection from './ServicesSection/ServicesSection';
 import WhyChooseUsSection from './WhyChooseUsSection/WhyChooseUsSection';
 import CustomersLogo from './CustomersLogo/CustomersLogo';
 import AboutFounders from './AboutFounders/AboutFounders';
+import FAQ from './FAQ/FAQ';
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
         <WhyChooseUsSection />
         <CustomersLogo />
         <AboutFounders />
+        <FAQ />
         </>
     );
 };
