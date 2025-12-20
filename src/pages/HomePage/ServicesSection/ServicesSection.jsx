@@ -33,7 +33,6 @@ import ServiceCard from "./ServiceCard.jsx/ServiceCard.jsx";
 
 const fetchServices = fetch("/services.json").then((res) => res.json());
 const ServicesSection = () => {
-  const [readMore, setReadMore] = useState(false);
   const services = use(fetchServices);
 
     const icons = {

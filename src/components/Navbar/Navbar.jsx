@@ -1,39 +1,8 @@
-import React, { useEffect, useState } from "react";
 import Button from "../Button";
-import { NavLink } from "react-router";
 import "./Navbar.css";
 import Netolyze from "../Netolyze/Netolyze";
+import { NavbarLinks } from "../NavbarLinks/NavbarLinks";
 
-export const NavbarLinks = ({ isLarge = false }) => {
-  const links = [
-    { name: "About us", href: "#about-us" },
-    { name: "Services", href: "#services" },
-    { name: "Why us", href: "#why-us" },
-  ];
-  return (
-    <>
-      <div className={`flex flex-col justify-between ${isLarge && "flex-row gap-10"}`}>
-        {links.map((link, idx) => {
-          return (
-            <li
-              key={idx}
-              className={`${
-                isLarge && "text-white text-[1.1rem]"
-              } border-b-2 border-transparent hover:border-b-[#7b53e8] transiton-[border] duration-500 ease-in`}
-            >
-              <NavLink to={link.href}>{link.name}</NavLink>
-            </li>
-          );
-        })}
-      </div>
-      <div className="divider mt-0 mb-0 lg:hidden"></div>
-      <Button
-        content={"book a strategy call"}
-        customStyle={"capitalize text-white text-sm inline-flex lg:hidden"}
-      />
-    </>
-  );
-};
 const Navbar = () => {
   // const [ isScrolled, setScrolled ] = useState(false)
 
