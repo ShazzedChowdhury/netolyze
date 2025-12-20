@@ -33,7 +33,7 @@ const ServiceCard = ({ service, Icon }) => {
             }
           />
         </div>
-        <Title gradientContent={service?.serviceTitle} style={"text-xl"} />
+        <Title gradientContent={service?.serviceTitle} customStyle={"text-xl"} />
         <h4>Goal: {service?.goal}</h4>
         <span>
           Includes:

@@ -1,10 +1,10 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 
-const BrandLogo = ({data, style, childStyle, gradient=true, isBorder}) => {
+const BrandLogo = ({data, customStyle, childStyle, gradient=true, isBorder}) => {
 
     return (
-      <div className={`overflow-hidden ${style || ""}`}>
+      <div className={`overflow-hidden ${customStyle || ""}`}>
         <Marquee
           autoFill={true}
           pauseOnHover={true}

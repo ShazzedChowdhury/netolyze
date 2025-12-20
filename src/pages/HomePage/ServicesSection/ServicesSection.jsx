@@ -63,18 +63,18 @@ const ServicesSection = () => {
   }
 
   return (
-    <Section style={"py-20"}>
+    <Section customStyle={"py-20"}>
       <Title
         content={"Digital Marketing"}
         gradientContent={"Services at TradeFigur"}
-        style={"text-5xl text-center mb-5"}
+        customStyle={"text-5xl text-center mb-5"}
       />
       <Description
         content={
           "Complete range of services designed for better visibility, revenue, growth & success for your business."
         }
         isSubtitle={true}
-        style={"text-lg text-center font-semibold mb-20"}
+        customStyle={"text-lg text-center font-semibold mb-20"}
       />
 
       {/* External Navigation Buttons */}

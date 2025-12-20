@@ -20,7 +20,7 @@ const HeroSection = () => {
             </p>
             <Button
               content={"get your free consultation now"}
-              style={"capitalize"}
+              customStyle={"capitalize"}
             />
           </div>
           {/* Image */}

@@ -12,19 +12,19 @@ const WhyChooseUsSection = () => {
     console.log(data)
     return (
       <Section
-        style={"py-20 relative"}
+        customStyle={"py-20 relative"}
       >
           <Title
             content={"Why We’re Best Choice as a"}
             gradientContent={"Digital Marketing agency"}
-            style={"text-5xl text-center mb-5"}
+            customStyle={"text-5xl text-center mb-5"}
           />
           <Description
             content={
               "We blend creativity with strategy to build brands that stand out, connect emotionally, and drive real results."
             }
             isSubtitle={true}
-            style={"text-lg text-center font-semibold mb-20"}
+            customStyle={"text-lg text-center font-semibold mb-20"}
           />
 
           <div>
@@ -37,7 +37,7 @@ const WhyChooseUsSection = () => {
               </div>
               {/* Animation */}
               <div className="relative">
-                <AnimatedImage data={animation} style={"max-w-lg mx-auto"} />
+                <AnimatedImage data={animation} customStyle={"max-w-lg mx-auto"} />
               </div>
             </div>
           </div>

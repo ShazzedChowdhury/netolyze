@@ -15,7 +15,7 @@ const PartnersSection = () => {
   ];
   return (
     <Section
-      style="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-3 border border-l-0 border-r-0 border-gray-800"
+      customStyle="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-3 border border-l-0 border-r-0 border-gray-800"
       customPadding="px-0 md:px-0"
       customWidth="w-full mx-auto container"
     >

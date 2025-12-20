@@ -18,7 +18,7 @@ const FAQ = () => {
         <Title
           content="Frequently Asked"
           gradientContent="Questions"
-          style={"text-5xl text-center mb-20"}
+          customStyle={"text-5xl text-center mb-20"}
         />
         <div className="flex gap-10 items-center">
           {/* faq container */}
@@ -54,7 +54,7 @@ const FAQ = () => {
               );
             })}
           </div>
-          <AnimatedImage data={faqAnimation} style="flex-1 xl:max-w-md w-full hidden lg:block" />
+          <AnimatedImage data={faqAnimation} customStyle="flex-1 xl:max-w-md w-full hidden lg:block" />
         </div>
       </Section>
     );

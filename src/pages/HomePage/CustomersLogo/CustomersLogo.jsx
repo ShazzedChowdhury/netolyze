@@ -20,7 +20,7 @@ const CustomersLogo = () => {
   ];
   return (
     <Section
-      style="bg-gradient-to-b from-[#5831C3] to-[#0F0817] lg:bg-gradient-to-r from-[#5831C3] to-[#0F0817] py-10"
+      customStyle="bg-gradient-to-b from-[#5831C3] to-[#0F0817] lg:bg-gradient-to-r from-[#5831C3] to-[#0F0817] py-10"
       customWidth="w-full"
       customPaddingX="px-0"
     >
@@ -35,7 +35,7 @@ const CustomersLogo = () => {
           data={customers}
           gradient={false}
           childStyle="mx-1 w-45 h-20 grid justify-center"
-          style="w-full lg:w-4/6"
+          customStyle="w-full lg:w-4/6"
           isBorder={true}
         />
       </div>

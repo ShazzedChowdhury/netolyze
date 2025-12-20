@@ -1,9 +1,9 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 
-const AnimatedImage = ({data, style}) => {
+const AnimatedImage = ({data, customStyle}) => {
     return (
-        <Lottie animationData={data} className={style} loop={true} />
+        <Lottie animationData={data} className={customStyle} loop={true} />
     );
 };
 

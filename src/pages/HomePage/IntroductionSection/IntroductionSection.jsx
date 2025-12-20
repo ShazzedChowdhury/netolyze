@@ -20,12 +20,12 @@ const IntroductionSection = () => {
           {/* Text content */}
           <div className="flex-1 flex flex-col justify-between border-l-4 border-[#5831C3] pl-5">
             <Title
-              style={"mb-5 text-2xl md:text-4xl"}
+              customStyle={"mb-5 text-2xl md:text-4xl"}
               content={"We’re a Full-Stack Digital"}
               gradientContent={"Marketing Company in Bangladesh"}
             />
             <Description
-              style={"text-lg"}
+              customStyle={"text-lg"}
               state={isReadMore}
               content={`Despite massive digital advances worldwide, many brands in Bangladesh are still struggling with older and tiring marketing methods. If you’re still stuck in outdated methods, now’s the time to lead with smarter marketing. With pride, we take charge of shaping Bangladesh’s online marketing space.
 
@@ -36,7 +36,7 @@ If your goal is to climb Google rankings, boost customer inquiries, or strengthe
             <Button
               handler={() => setReadMore((value) => !value)}
               content={isReadMore ? "Collapse" : "about more"}
-              style={"mt-5 w-fit"}
+              customStyle={"mt-5 w-fit"}
             />
           </div>
         </div>

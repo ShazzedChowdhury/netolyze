@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import TradeFigur from "../TradeFigur/TradeFigur";
 import Button from "../Button";
 import { NavLink } from "react-router";
 import "./Navbar.css";
+import Netolyze from "../Netolyze/Netolyze";
 
 export const NavbarLinks = ({ isLarge = false }) => {
   const links = [
@@ -18,8 +18,8 @@ export const NavbarLinks = ({ isLarge = false }) => {
             <li
               key={idx}
               className={`${
-                isLarge && "text-white text-[1rem]"
-              } border-2 border-transparent`}
+                isLarge && "text-white text-[1.1rem]"
+              } border-b-2 border-transparent hover:border-b-[#7b53e8] transiton-[border] duration-500 ease-in`}
             >
               <NavLink to={link.href}>{link.name}</NavLink>
             </li>
@@ -29,7 +29,7 @@ export const NavbarLinks = ({ isLarge = false }) => {
       <div className="divider mt-0 mb-0 lg:hidden"></div>
       <Button
         content={"book a strategy call"}
-        style={"capitalize text-white text-sm inline-flex lg:hidden"}
+        customStyle={"capitalize text-white text-sm inline-flex lg:hidden"}
       />
     </>
   );
@@ -46,7 +46,7 @@ const Navbar = () => {
     <div className="navbar bg-tranparent px-5 py-5 lg:px-10">
       <div className="navbar-start">
         <span>
-          <TradeFigur />
+          <Netolyze />
         </span>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -87,7 +87,7 @@ const Navbar = () => {
         {/* CTA button */}
         <Button
           content={"book a strategy call"}
-          style={"capitalize hidden lg:inline-flex"}
+          customStyle={"capitalize hidden lg:inline-flex"}
         />
       </div>
     </div>
