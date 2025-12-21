@@ -18,7 +18,7 @@ const FAQ = () => {
         <Title
           content="Frequently Asked"
           gradientContent="Questions"
-          customStyle={"text-5xl text-center mb-20"}
+          customStyle={"text-3xl md:text-5xl text-center mb-20"}
         />
         <div className="flex gap-10 items-center">
           {/* faq container */}

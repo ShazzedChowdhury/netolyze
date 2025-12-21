@@ -18,7 +18,7 @@ const AboutFounders = () => {
       <Title
         content={"Meet Our"}
         gradientContent={"Founders"}
-        customStyle={"text-5xl text-center mb-20"}
+        customStyle={"text-3xl md:text-5xl text-center mb-20"}
       />
       <div className="flex flex-col md:flex-row gap-5">
         {data.map((singleData, idx) => {

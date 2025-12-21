@@ -66,7 +66,7 @@ const ServicesSection = () => {
       <Title
         content={"Digital Marketing"}
         gradientContent={"Services at TradeFigur"}
-        customStyle={"text-5xl text-center mb-5"}
+        customStyle={"text-3xl md:text-5xl text-center mb-5"}
       />
       <Description
         content={

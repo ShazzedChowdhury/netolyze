@@ -18,7 +18,7 @@ const WhyChooseUsSection = () => {
           <Title
             content={"Why We’re Best Choice as a"}
             gradientContent={"Digital Marketing agency"}
-            customStyle={"text-5xl text-center mb-5"}
+            customStyle={"text-3xl md:text-5xl text-center mb-5"}
           />
           <Description
             content={
