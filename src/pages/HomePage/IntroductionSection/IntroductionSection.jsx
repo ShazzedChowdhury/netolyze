@@ -11,7 +11,7 @@ const IntroductionSection = () => {
   const [ isReadMore, setReadMore ] = useState(false);
  
     return (
-      <Section style={"h-auto xl:min-h-screen flex items-center"}>
+      <Section id="about-us" style={"h-auto xl:min-h-screen flex items-center"}>
         <div className="flex flex-col lg:flex-row items-center  py-20 lg:gap-10">
           {/* Animation image */}
           <div className="flex-1">

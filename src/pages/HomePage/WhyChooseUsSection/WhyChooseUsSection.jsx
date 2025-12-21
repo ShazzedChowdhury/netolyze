@@ -12,6 +12,7 @@ const WhyChooseUsSection = () => {
     console.log(data)
     return (
       <Section
+        id="why-us"
         customStyle={"py-20 relative"}
       >
           <Title

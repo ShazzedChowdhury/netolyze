@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Section = ({
+  id,
   children,
   customStyle,
   customWidth = "container",
@@ -8,7 +9,7 @@ const Section = ({
   customPaddingY 
 }) => {
   return (
-    <section className={`${customWidth} ${customPaddingY} ${customPaddingX} ${customStyle && customStyle}`}>
+    <section id={id} className={`${customWidth} ${customPaddingY} ${customPaddingX} ${customStyle && customStyle}`}>
       {children}
     </section>
   );

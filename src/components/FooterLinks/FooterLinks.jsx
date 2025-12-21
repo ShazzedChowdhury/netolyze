@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Scroll from '../Scroll/Scroll';
 
 const FooterLinks = ({links, isSocial=false, isLink=true}) => {
 
@@ -39,7 +40,7 @@ const FooterLinks = ({links, isSocial=false, isLink=true}) => {
             {links.map((link, idx) => {
               return (
                 <li key={idx}>
-                  <Link to={link.href}>{link.name}</Link>
+                  <Scroll name={link?.name} href={link?.href} />
                 </li>
               );
             })}

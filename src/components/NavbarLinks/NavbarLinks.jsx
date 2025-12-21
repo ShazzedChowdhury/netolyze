@@ -1,13 +1,15 @@
-import { NavLink } from "react-router";
+import { useNavigate } from "react-router";
 import Button from "../Button";
-import Footer from "../Footer/Footer";
 import FooterLinks from "../FooterLinks/FooterLinks";
+import Scroll from "../Scroll/Scroll";
 
 export const NavbarLinks = ({ isLarge = false, isFooter=false }) => {
+
   const links = [
     { name: "About us", href: "#about-us" },
     { name: "Services", href: "#services" },
     { name: "Why us", href: "#why-us" },
+    { name: "FAQ", href: "#faq" },
   ];
   return (
     <>
@@ -28,7 +30,7 @@ export const NavbarLinks = ({ isLarge = false, isFooter=false }) => {
                     isLarge && "text-white text-[1.1rem]"
                   } border-b-2 border-transparent hover:border-b-[#7b53e8] transiton-[border] duration-500 ease-in`}
                 >
-                  <NavLink to={link.href}>{link.name}</NavLink>
+                  <Scroll name={link?.name} href={link?.href} />
                 </li>
               );
             })}

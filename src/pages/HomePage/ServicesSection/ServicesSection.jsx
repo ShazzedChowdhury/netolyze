@@ -62,7 +62,7 @@ const ServicesSection = () => {
   }
 
   return (
-    <Section customStyle={"py-20"}>
+    <Section id="services" customStyle={"py-20"}>
       <Title
         content={"Digital Marketing"}
         gradientContent={"Services at TradeFigur"}

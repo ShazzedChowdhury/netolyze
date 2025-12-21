@@ -14,7 +14,7 @@ const FAQ = () => {
         setOpentIndex(selectedIdx => (selectedIdx === index ? null : index));
     }
     return (
-      <Section customPaddingY="py-20">
+      <Section id="faq" customPaddingY="py-20">
         <Title
           content="Frequently Asked"
           gradientContent="Questions"

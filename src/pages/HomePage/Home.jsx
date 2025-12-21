@@ -7,8 +7,6 @@ import WhyChooseUsSection from './WhyChooseUsSection/WhyChooseUsSection';
 import CustomersLogo from './CustomersLogo/CustomersLogo';
 import AboutFounders from './AboutFounders/AboutFounders';
 import FAQ from './FAQ/FAQ';
-import Footer from '../../components/Footer/Footer';
-
 
 
 const Home = () => {
@@ -22,7 +20,6 @@ const Home = () => {
         <CustomersLogo />
         <AboutFounders />
         <FAQ />
-        <Footer />
         </>
     );
 };
