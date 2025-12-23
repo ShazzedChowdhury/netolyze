@@ -42,7 +42,7 @@ export const Footer = () => {
       <div className="container mx-auto px-5 md:px-10 pt-20 text-white">
         <div className="grid gap-10 row-gap-10 mb-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
-            <Netolyze />
+            <Netolyze isFooter={true} />
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
