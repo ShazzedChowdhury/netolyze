@@ -4,6 +4,8 @@ import Title from '../../../components/Title/Title';
 import { IoIosArrowDown } from "react-icons/io";
 import AnimatedImage from '../../../components/AnimatedImage/AnimatedImage';
 import faqAnimation from '../../../assets/animations/FAQ.json'
+import { motion } from 'motion/react'
+import TitleAnimation from '../../../components/TitleAnimation/TitleAnimation';
 
 const fetchData = fetch('/faq.json').then(res => res.json());
 const FAQ = () => {
@@ -15,14 +17,21 @@ const FAQ = () => {
     }
     return (
       <Section id="faq" customPaddingY="py-20">
-        <Title
-          content="Frequently Asked"
-          gradientContent="Questions"
-          customStyle={"text-3xl md:text-5xl text-center mb-20"}
-        />
-        <div className="flex gap-10 items-center">
+        <TitleAnimation>
+          <Title
+            content="Frequently Asked"
+            gradientContent="Questions"
+            customStyle={"text-3xl md:text-5xl text-center mb-20"}
+          />
+        </TitleAnimation>
+        <div className="flex gap-10 justify-between items-center">
           {/* faq container */}
-          <div className='flex-1'>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="w-full lg:w-3/5"
+          >
             {data.map((singleData, idx) => {
               return (
                 <div
@@ -54,8 +63,18 @@ const FAQ = () => {
                 </div>
               );
             })}
-          </div>
-          <AnimatedImage data={faqAnimation} customStyle="flex-1 xl:max-w-md w-full hidden lg:block" />
+          </motion.div>
+          <motion.div
+            className="w-2/5 hidden lg:block"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <AnimatedImage
+              data={faqAnimation}
+              customStyle="xl:max-w-md w-full"
+            />
+          </motion.div>
         </div>
       </Section>
     );

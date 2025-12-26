@@ -4,7 +4,7 @@ import google from "../../../assets/partners-logo/google.png";
 import shopify from "../../../assets/partners-logo/shopify.png";
 import meta from "../../../assets/partners-logo/meta.png";
 import linkedin from "../../../assets/partners-logo/linkedin.png";
-import Divider from "../../../components/Divider/Divider";
+import { motion } from "motion/react"
 
 const PartnersSection = () => {
   const partners = [
@@ -21,16 +21,19 @@ const PartnersSection = () => {
     >
       {partners.map((partner, idx) => {
         return (
-          <div
-            key={idx}
-            className="max-w-80 grayscale hover:grayscale-0 transition-[filter] duration-1000 max-h-30 w-full h-full flex items-center"
+          <motion.div
+          key={idx}
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: idx }}
+            className="max-w-80 md:grayscale hover:grayscale-0 transition-[filter] duration-1000 max-h-30 w-full h-full flex items-center"
           >
             <img
               src={partner?.logo}
               alt={partner?.name}
               className="object-cover w-full h-full"
             />
-          </div>
+          </motion.div>
         );
       })}
     </Section>

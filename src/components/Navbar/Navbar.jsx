@@ -3,6 +3,7 @@ import "./Navbar.css";
 import Netolyze from "../Netolyze/Netolyze";
 import { NavbarLinks } from "../NavbarLinks/NavbarLinks";
 import { useEffect, useState } from "react";
+import {motion} from 'motion/react'
 
 const Navbar = () => {
   const [ isScrolled, setScrolled ] = useState(false)
@@ -15,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       {/* Normal navbar */}
-      <div className="navbar bg-tranparent px-5 py-5 lg:px-10 border-b border-white/10">
+      <motion.div initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{duration: 0.8}} className="navbar bg-tranparent px-5 py-5 lg:px-10 border-b border-white/10">
         <div className="navbar-start">
           <span>
             <Netolyze />
@@ -62,7 +63,7 @@ const Navbar = () => {
             customStyle={"capitalize hidden lg:inline-flex"}
           />
         </div>
-      </div>
+      </motion.div>
       {/* fixed navbar */}
       <div
         className={`navbar fixed top-0 left-0 w-full z-100 bg-white/2 border-b border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] px-5 py-5 lg:px-10 transition-transform duration-800 ease-in-out backdrop-blur-sm  ${

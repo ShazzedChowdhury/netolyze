@@ -5,20 +5,26 @@ import animation from '../../../assets/animations/Office-boy-Multitasking.json'
 import Button from '../../../components/Button';
 import Title from '../../../components/Title/Title';
 import Description from '../../../components/Description/Description';
+import { motion } from 'motion/react'
 
 
 const IntroductionSection = () => {
   const [ isReadMore, setReadMore ] = useState(false);
  
     return (
-      <Section id="about-us" style={"h-auto xl:min-h-screen flex items-center"}>
+      <Section id="about-us" customStyle={"h-auto xl:min-h-screen flex items-center overflow-x-hidden"}>
         <div className="flex flex-col lg:flex-row items-center  py-20 lg:gap-10">
           {/* Animation image */}
-          <div className="flex-1">
-            <AnimatedImage data={animation} style={"max-w-lg mx-auto"} />
-          </div>
+          <motion.div initial={{ opacity: 0, scale: 0 }} whileInView={{  opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="flex-1">
+            <AnimatedImage data={animation} customStyle={"max-w-lg w-full mx-auto"} />
+          </motion.div>
           {/* Text content */}
-          <div className="flex-1 flex flex-col justify-between border-l-4 border-[#5831C3] pl-5">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex-1 flex flex-col justify-between border-l-4 border-[#5831C3] pl-5"
+          >
             <Title
               customStyle={"mb-5 text-2xl md:text-4xl"}
               content={"We’re a Full-Stack Digital"}
@@ -33,12 +39,12 @@ Marketorr team guides you to find every challenge your brand faces and brings th
 
 If your goal is to climb Google rankings, boost customer inquiries, or strengthen your brand’s online presence, Marketorr is the best team to have by your side. As a top marketing agency in Bangladesh, we strongly focus on ensuring measurable performance over empty promises and help you reach your business goals faster and smarter.`}
             />
-            <Button
-              handler={() => setReadMore((value) => !value)}
-              content={isReadMore ? "Collapse" : "about more"}
-              customStyle={"mt-5 w-fit"}
-            />
-          </div>
+              <Button
+                handler={() => setReadMore((value) => !value)}
+                content={isReadMore ? "Collapse" : "about more"}
+                customStyle={"mt-5 w-fit"}
+              />
+          </motion.div>
         </div>
       </Section>
     );

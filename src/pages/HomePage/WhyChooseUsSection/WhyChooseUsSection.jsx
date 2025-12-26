@@ -5,16 +5,16 @@ import Description from "../../../components/Description/Description";
 import AnimatedImage from "../../../components/AnimatedImage/AnimatedImage";
 import animation from "../../../assets/animations/Financial-charts.json";
 import SingleData from "./SingleData/SingleData";
+import { motion } from "motion/react";
+import TitleAnimation from "../../../components/TitleAnimation/TitleAnimation";
 
 const fetchData = fetch('/why-choose-us.json').then(res => res.json())
 const WhyChooseUsSection = () => {
     const data = use(fetchData)
 
     return (
-      <Section
-        id="why-us"
-        customStyle={"py-20 relative"}
-      >
+      <Section id="why-us" customStyle={"py-20 relative"}>
+        <TitleAnimation>
           <Title
             content={"Why We’re Best Choice as a"}
             gradientContent={"Digital Marketing agency"}
@@ -27,21 +27,34 @@ const WhyChooseUsSection = () => {
             isSubtitle={true}
             customStyle={"text-lg text-center font-semibold mb-20"}
           />
-
-          <div>
-            {/* content section */}
-            <div className="grid gap-6 row-gap-10 xl:grid-cols-2 justify-center itmes-center">
-              <div className="lg:py-6 lg:pr-16">
-                {data?.map((single, idx) => {
-                  return <SingleData key={idx} single={single} />;
-                })}
-              </div>
-              {/* Animation */}
-              <div className="relative">
-                <AnimatedImage data={animation} customStyle={"max-w-lg mx-auto"} />
-              </div>
-            </div>
+        </TitleAnimation>
+        <div>
+          {/* content section */}
+          <div className="grid gap-6 row-gap-10 xl:grid-cols-2 justify-center itmes-center">
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="lg:py-6 lg:pr-16"
+            >
+              {data?.map((single, idx) => {
+                return <SingleData key={idx} single={single} />;
+              })}
+            </motion.div>
+            {/* Animation */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="flex-1"
+            >
+              <AnimatedImage
+                data={animation}
+                customStyle={"max-w-lg mx-auto"}
+              />
+            </motion.div>
           </div>
+        </div>
       </Section>
     );
 };

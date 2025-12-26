@@ -6,7 +6,7 @@ const SingleData = ({ single }) => {
       <div className="flex flex-col items-center mr-4">
         <div>
           {/* icon */}
-          <div className="flex items-center justify-center w-10 h-10 border rounded-full gradient_color -rotate-90 group-hover:scale-115 transition-transform duration-1000">
+          <div className="flex items-center justify-center w-10 h-10  rounded-full gradient_color -rotate-90 group-hover:scale-115 transition-transform duration-1000">
             <svg
               className="w-4 text-white"
               stroke="currentColor"
